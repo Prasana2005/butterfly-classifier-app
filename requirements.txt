@@ -5,3 +5,4 @@ pandas
 scikit-learn
 Pillow
 h5py
+python-3.9
