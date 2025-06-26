@@ -16,9 +16,9 @@ index_to_class = {v: k for k, v in class_indices.items()}
 st.title("🦋 Butterfly Species Classifier")
 st.write("Upload a butterfly image and I’ll tell you its species!")
 
-# Upload image
-uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
-
+st.markdown("📂 **Choose a butterfly image**  \n📌 *(Filename should include the actual species name for comparison)*")
+# File uploader with no label
+uploaded_file = st.file_uploader("", type=["jpg", "jpeg", "png"])
 if uploaded_file is not None:
     # Get true label from filename
     filename = uploaded_file.name
