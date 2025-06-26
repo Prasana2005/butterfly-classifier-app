@@ -26,3 +26,8 @@ This app can be deployed online using Streamlit Cloud:
 3. Link your GitHub and deploy your app
 
 Done this project in APSCHE- SMARTBRIDGE Virtual Internship Program.
+
+## 🦋 Butterfly Classifier - Live Demo
+
+🔗 [Click here to try the app] : (https://butterfly-classifier-app-easyclassy.streamlit.app/)
+
