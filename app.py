@@ -35,6 +35,12 @@ if uploaded_file is not None:
     predicted_class = index_to_class[predicted_index]
     confidence = np.max(prediction) * 100
 
-    # Show result
-    st.success(f"🎯 Predicted Species: **{predicted_class}**")
-    st.info(f"Confidence: {confidence:.2f}%")
+    # Set a confidence threshold (you can adjust this)
+    threshold = 60.0
+
+    if confidence >= threshold:
+        st.success(f"🎯 Predicted Species: **{predicted_class}**")
+        st.info(f"Confidence: {confidence:.2f}%")
+    else:
+        st.error("🚫 This image is likely **not a butterfly**, or the model is unsure.")
+        st.info(f"Prediction Confidence: {confidence:.2f}% (Below threshold)")
